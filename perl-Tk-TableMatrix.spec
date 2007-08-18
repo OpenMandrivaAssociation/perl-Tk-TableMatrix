@@ -55,6 +55,9 @@ This is the development package.
 rm -rf %{buildroot}
 %makeinstall_std
 
+# 20070818 remove file owned by perl-Tk-804.027-7mdv2007.0.i586
+rm -rf %{buildroot}/%{perl_vendorarch}/Tk/pTk/extralibs.ld
+
 %clean
 rm -rf %{buildroot}
 
