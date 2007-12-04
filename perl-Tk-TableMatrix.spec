@@ -13,7 +13,7 @@ Url:		http://search.cpan.org/dist/%{module}/
 Source0:	http://cpan.org/authors/id/C/CE/CERNEY/%{module}-%{version}.tar.bz2
 # for fake X display:
 BuildRequires:	XFree86-Xvfb
-BuildRequires:	XFree86-devel
+BuildRequires:	X11-devel
 BuildRequires:	perl-devel
 BuildRequires:	perl-Tk-devel
 BuildRoot: 	%{_tmppath}/%{name}-%{version}
