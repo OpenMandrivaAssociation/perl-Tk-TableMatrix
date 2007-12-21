@@ -16,6 +16,7 @@ BuildRequires:	XFree86-Xvfb
 BuildRequires:	X11-devel
 BuildRequires:	perl-devel
 BuildRequires:	perl-Tk-devel
+BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
 %description
 Tk::TableMatrix is a table/matrix widget extension to perl/tk
