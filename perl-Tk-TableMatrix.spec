@@ -1,7 +1,7 @@
 %define module 	Tk-TableMatrix
 %define name 	perl-%{module}
 %define version 1.23
-%define release %mkrel 2
+%define release %mkrel 3
 
 Name: 		%{name}
 Version: 	%{version}
