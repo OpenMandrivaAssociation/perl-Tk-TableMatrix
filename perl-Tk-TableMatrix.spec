@@ -1,22 +1,22 @@
-%define module 	Tk-TableMatrix
-%define name 	perl-%{module}
-%define version 1.23
-%define release %mkrel 6
+%define upstream_name 	 Tk-TableMatrix
+%define upstream_version 1.23
 
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
+Name: 		perl-%{upstream_name}
+Version: 	%perl_convert_version %{upstream_version}
+Release: 	%mkrel 1
+
 Summary:	Tk-TableMatrix perl module
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}/
-Source0:	http://cpan.org/authors/id/C/CE/CERNEY/%{module}-%{version}.tar.bz2
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	http://cpan.org/authors/id/C/CE/CERNEY/%{upstream_name}-%{upstream_version}.tar.bz2
+
 # for fake X display:
 BuildRequires:	XFree86-Xvfb
 BuildRequires:	X11-devel
 BuildRequires:	perl-devel
 BuildRequires:	perl-Tk-devel
-BuildRoot: 	%{_tmppath}/%{name}-%{version}
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Tk::TableMatrix is a table/matrix widget extension to perl/tk
@@ -34,7 +34,7 @@ for displaying data in a table (or spreadsheet) format.
 This is the development package.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -72,5 +72,4 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc README Changes
 %{perl_vendorarch}/Tk
-
 
