@@ -12,10 +12,11 @@ Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://cpan.org/authors/id/C/CE/CERNEY/%{upstream_name}-%{upstream_version}.tar.bz2
 
 # for fake X display:
-BuildRequires:	XFree86-Xvfb
-BuildRequires:	X11-devel
-BuildRequires:	perl-devel
 BuildRequires:	perl-Tk-devel
+BuildRequires:	perl-devel
+BuildRequires:	X11-devel
+BuildRequires:	x11-server-xvfb
+
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
