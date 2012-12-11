@@ -58,3 +58,75 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/Tk
 %{perl_vendorarch}/auto/Tk
 %{_mandir}/*/*
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.230.0-3
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Mon Feb 07 2011 Funda Wang <fwang@mandriva.org> 1.230.0-2
++ Revision: 636514
+- no need to provide additional devel package
+
+* Wed Jul 21 2010 Jérôme Quelin <jquelin@mandriva.org> 1.230.0-1mdv2011.0
++ Revision: 556327
+- update buildrequires:
+
+* Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 1.230.0-1mdv2010.0
++ Revision: 401502
+- rebuild using %%perl_convert_version
+- fixed license field
+
+* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.23-6mdv2009.0
++ Revision: 258658
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 1.23-5mdv2009.0
++ Revision: 246655
+- rebuild
+
+* Mon Feb 04 2008 Jérôme Quelin <jquelin@mandriva.org> 1.23-3mdv2008.1
++ Revision: 162067
+- forcing rebuild with new perl 5.10
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - kill re-definition of %%buildroot on Pixel's request
+    - buildrequires X11-devel instead of XFree86-devel
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Sat Aug 18 2007 Stefan van der Eijk <stefan@mandriva.org> 1.23-1mdv2008.0
++ Revision: 65426
+- remove file owned by perl-Tk
+
+
+* Thu Feb 01 2007 Stefan van der Eijk <stefan@mandriva.org> 1.23-1mdv2007.0
++ Revision: 115815
+- 1.23
+
+* Sat Nov 04 2006 Stefan van der Eijk <stefan@mandriva.org> 1.22-2mdv2007.1
++ Revision: 76554
+- DISABLE the check for now. It's won't work with build bots.
+- Import perl-Tk-TableMatrix
+
+* Tue Mar 28 2006 Guillaume Rousse <guillomovitch@mandriva.org> 1.22-1mdk
+- New release 1.22
+
+* Wed Mar 08 2006 Guillaume Rousse <guillomovitch@mandriva.org> 1.21-1mdk
+- New release 1.21
+- spec cleanup
+- fix directory ownership"
+
+* Mon Dec 26 2005 Stefan van der Eijk <stefan@eijk.nu> 1.2-1mdk
+- 1.2
+- %%mkrel
+
+* Mon Nov 29 2004 Stefan van der Eijk <stefan@mandrake.org> 1.1-2mdk
+- rebuild for new perl
+
+* Thu Jul 22 2004 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 1.1-1mdk
+- 1.1
+
