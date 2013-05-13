@@ -3,7 +3,7 @@
 
 Name: 		perl-%{upstream_name}
 Version: 	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	4
 
 Summary:	Tk-TableMatrix perl module
 License:	GPL+ or Artistic
@@ -18,7 +18,6 @@ BuildRequires:	pkgconfig(x11)
 Obsoletes:	%{name}-devel < %version-%release
 Provides:	%{name}-devel = %version-%release
 
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Tk::TableMatrix is a table/matrix widget extension to perl/tk
