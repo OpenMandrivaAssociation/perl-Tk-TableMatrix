@@ -14,7 +14,7 @@ Source0:	http://cpan.org/authors/id/C/CE/CERNEY/%{upstream_name}-%{upstream_vers
 # for fake X display:
 BuildRequires:	perl-Tk-devel
 BuildRequires:	perl-devel
-BuildRequires:	libx11-devel
+BuildRequires:	pkgconfig(x11)
 Obsoletes:	%{name}-devel < %version-%release
 Provides:	%{name}-devel = %version-%release
 
