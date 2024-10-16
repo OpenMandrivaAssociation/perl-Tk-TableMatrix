@@ -8,7 +8,7 @@ Release:	6
 Summary:	Tk-TableMatrix perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://cpan.org/authors/id/C/CE/CERNEY/%{upstream_name}-%{upstream_version}.tar.bz2
 
 # for fake X display:
