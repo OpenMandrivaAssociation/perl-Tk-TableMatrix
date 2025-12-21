@@ -12,6 +12,7 @@ Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://cpan.org/authors/id/C/CE/CERNEY/%{upstream_name}-%{upstream_version}.tar.bz2
 
 # for fake X display:
+BuildRequires:	make
 BuildRequires:	perl-Tk-devel
 BuildRequires:	perl-devel
 BuildRequires:	pkgconfig(x11)
