@@ -1,15 +1,15 @@
 %define upstream_name 	 Tk-TableMatrix
-%define upstream_version 1.23
+%define upstream_version 1.29
 
 Name: 		perl-%{upstream_name}
-Version: 	%perl_convert_version %{upstream_version}
-Release:	6
+Version: 	%{upstream_version}
+Release:	1
 
 Summary:	Tk-TableMatrix perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://cpan.org/authors/id/C/CE/CERNEY/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://github.com/asb-capfan/Tk-TableMatrix
+Source0:	https://cpan.metacpan.org/authors/id/C/CA/CAC/Tk-TableMatrix-%{upstream_version}.tar.gz
 
 # for fake X display:
 BuildRequires:	make
