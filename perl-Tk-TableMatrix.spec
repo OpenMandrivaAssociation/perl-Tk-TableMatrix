@@ -1,15 +1,13 @@
 %define upstream_name 	 Tk-TableMatrix
-%define upstream_version 1.29
-
 Name: 		perl-%{upstream_name}
-Version: 	%{upstream_version}
-Release:	1
+Version: 	1.29
+Release:	2
 
 Summary:	Tk-TableMatrix perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/asb-capfan/Tk-TableMatrix
-Source0:	https://cpan.metacpan.org/authors/id/C/CA/CAC/Tk-TableMatrix-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/C/CA/CAC/Tk-TableMatrix-%{version}.tar.gz
 
 # for fake X display:
 BuildRequires:	make
@@ -25,7 +23,7 @@ Tk::TableMatrix is a table/matrix widget extension to perl/tk
 for displaying data in a table (or spreadsheet) format.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -75,8 +73,7 @@ rm -rf %{buildroot}
 
 * Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 1.230.0-1mdv2010.0
 + Revision: 401502
-- rebuild using %%perl_convert_version
-- fixed license field
+- rebuild using %1.29 fixed license field
 
 * Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.23-6mdv2009.0
 + Revision: 258658
