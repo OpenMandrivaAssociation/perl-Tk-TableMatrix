@@ -2,7 +2,7 @@
 %define upstream_version 1.29
 Name: 		perl-%{upstream_name}
 Version:	1.29
-Release:	1
+Release:	2
 
 Summary:	Tk-TableMatrix perl module
 License:	GPL+ or Artistic
@@ -27,7 +27,7 @@ for displaying data in a table (or spreadsheet) format.
 %setup -q -n %{upstream_name}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
@@ -48,8 +48,6 @@ rm -rf %{buildroot}
 # 20070818 remove file owned by perl-Tk-804.027-7mdv2007.0.i586
 rm -rf %{buildroot}/%{perl_vendorarch}/Tk/pTk/extralibs.ld
 
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
