@@ -2,7 +2,7 @@
 %define upstream_version 1.29
 Name: 		perl-%{upstream_name}
 Version:	1.29
-Release:	2
+Release:	3
 
 Summary:	Tk-TableMatrix perl module
 License:	GPL+ or Artistic
@@ -24,7 +24,7 @@ Tk::TableMatrix is a table/matrix widget extension to perl/tk
 for displaying data in a table (or spreadsheet) format.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n Tk-TableMatrix-1.29
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -40,7 +40,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 #xauth remove $DISPLAY
 #kill $(cat /tmp/.X$XDISPLAY-lock)
-
+make test || :
 %install
 rm -rf %{buildroot}
 %makeinstall_std
